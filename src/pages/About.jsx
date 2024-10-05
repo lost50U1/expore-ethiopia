@@ -48,8 +48,8 @@ const About = () => {
               <div>
                 <h3 className="font-bold text-2xl">Tailored Experiences</h3>
                 <p className="my-6">
-                  We tailor each trip to your interests, whether it's history,
-                  food, or adventure, we have you covered.
+                  We tailor each trip to your interests, whether it&apos;s
+                  history, food, or adventure, we have you covered.
                 </p>
               </div>
             </div>
