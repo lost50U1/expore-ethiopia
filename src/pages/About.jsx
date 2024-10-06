@@ -14,7 +14,10 @@ const About = () => {
               We specialize in providing unforgettable experiences in Ethiopia,
               from breathtaking landscapes to rich cultural heritage.
             </p>
-            <Link className="bg-black text-white px-6 py-3 rounded-full" to="/">
+            <Link
+              className="bg-black text-white border hover:bg-white hover:text-black hover:border-black px-6 py-3 rounded-full"
+              to="/"
+            >
               Back to Home
             </Link>
           </div>

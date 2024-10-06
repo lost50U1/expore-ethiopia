@@ -4,7 +4,7 @@ import { logoblackImg } from "../utils";
 const Footer = () => {
   return (
     <footer>
-      <div className="container w-full px-4 sm:px-0">
+      <div className="container w-full px-4 sm:px-6">
         <hr className="border-lightgray" />
         <div className="py-8">
           <div className="flex gap-2 items-center mb-5">
@@ -15,7 +15,7 @@ const Footer = () => {
               <p className="font-bold">Explore Ethiopia</p>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row justify-between items-center w-full">
+          <div className="flex flex-col sm:flex-row justify-between items-center w-full gap-4">
             <p className="text-lightergray font-medium">
               &copy; 2024 Explore Ethiopia
             </p>

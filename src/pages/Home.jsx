@@ -25,20 +25,20 @@ const Home = () => {
       <main className="min-h-screen flex flex-col">
         {/* hero section  */}
         <section className="bg-black text-white py-20 sm:py-28">
-          <div className="container px-4 sm:px-0">
-            <div className="flex flex-col sm:flex-row justify-between">
-              <div className="w-full max-w-[506px] flex flex-col gap-14 items-start">
-                <h1 className="font-semibold text-6xl">
+          <div className="container px-4 sm:px-6">
+            <div className="flex flex-col sm:flex-row justify-between gap-10">
+              <div className="w-full max-w-[506px] flex flex-col gap-8 sm:gap-14 items-start">
+                <h1 className="font-semibold text-4xl sm:text-6xl">
                   Embark on Your Ethiopian Adventure
                 </h1>
-                <p className="text-xl">
+                <p className="sm:text-xl">
                   We specialize in providing unforgettable experiences in
                   Ethiopia, from breathtaking landscapes to rich cultural
                   heritage.
                 </p>
-                <button>
+                <button className="mb-16">
                   <Link
-                    className="bg-white text-black px-6 py-3 rounded-xl"
+                    className="bg-white text-black border hover:text-white hover:bg-black px-6 py-3 rounded-xl"
                     to="/about"
                   >
                     Learn More
@@ -50,9 +50,13 @@ const Home = () => {
               </div>
             </div>
             {/* second row  */}
-            <div className="flex flex-col sm:flex-row justify-between py-16 sm:py-24">
-              <div className="w-full max-w-[574px]">
-                <img src={coffeeImg} alt="coffee" />
+            <div className="flex flex-col sm:flex-row justify-between py-16 sm:py-24 gap-10">
+              <div className="w-full max-w-[574px] max-sm:max-w-full flex max-sm:justify-center">
+                <img
+                  src={coffeeImg}
+                  alt="coffee"
+                  className="md:object-contain"
+                />
               </div>
               <div className="w-full max-w-[506px] flex flex-col gap-6 items-start">
                 <h3 className="font-semibold text-2xl">01</h3>
@@ -69,13 +73,13 @@ const Home = () => {
             </div>
             {/* 3rd row  */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
-              <div>
+              <div className="flex max-sm:justify-center">
                 <img src={lalibelaImg} alt="lalibela" />
               </div>
-              <div>
+              <div className="flex max-sm:justify-center">
                 <img src={semienImg} alt="semien mountain" />
               </div>
-              <div>
+              <div className="flex max-sm:justify-center">
                 <img src={cuisineImg} alt="traditional cuisine" />
               </div>
             </div>
@@ -83,7 +87,7 @@ const Home = () => {
         </section>
         {/* 1st section  */}
         <section className="py-20 sm:py-28">
-          <div className="container px-4 sm:px-0">
+          <div className="container px-4 sm:px-6">
             <div className="flex flex-col sm:flex-row gap-20 items-center">
               <div>
                 <h2 className="font-bold text-3xl">
@@ -94,10 +98,10 @@ const Home = () => {
                   experiences. Let us take you on an unforgettable adventure.
                 </p>
                 <div className="flex gap-4 mt-8">
-                  <button className="font-semibold text-lg px-4 py-2 border border-[#B3B3B3] rounded-xl">
+                  <button className="font-semibold text-lg px-4 py-2 border border-[#B3B3B3] rounded-xl hover:text-white hover:bg-black">
                     Explore More
                   </button>
-                  <button className="font-semibold text-lg px-4 py-2 rounded-xl bg-[#2463EB] text-white">
+                  <button className="font-semibold text-lg px-4 py-2 rounded-xl bg-[#2463EB] text-white border hover:text-[#2463EB] hover:border-[#2463EB] hover:bg-white">
                     Start Now
                   </button>
                 </div>
@@ -125,7 +129,7 @@ const Home = () => {
         </section>
         {/* 2nd section  */}
         <section className="py-20 sm:py-28">
-          <div className="container px-4 sm:px-0">
+          <div className="container px-4 sm:px-6">
             <div className="flex flex-col sm:flex-row gap-20 items-center">
               <div>
                 <h2 className="font-bold text-3xl">
@@ -134,8 +138,8 @@ const Home = () => {
                 <p className="text-lg mt-4">
                   Discover the beauty of Ethiopia with us.
                 </p>
-                <div className="mt-11 w-3/4">
-                  <div className="flex gap-20">
+                <div className="mt-11 sm:w-3/4">
+                  <div className="flex flex-col sm:flex-row gap-4 md:gap-10 lg:gap-20">
                     <div className="flex items-center gap-4 mb-2">
                       <div className="border border-[#B3B3B3] rounded-xl p-2">
                         <img src={lightingImg} alt="star" />
@@ -153,7 +157,7 @@ const Home = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="flex gap-20">
+                  <div className="flex flex-col sm:flex-row gap-4 md:gap-10 lg:gap-20 mt-3">
                     <div className="flex items-center gap-4 mb-2">
                       <div className="border border-[#B3B3B3] rounded-xl p-2">
                         <img src={imageImg} alt="star" />
@@ -172,7 +176,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <button className="font-semibold text-lg px-4 py-2 border border-[#B3B3B3] rounded-xl mt-11">
+                <button className="font-semibold text-lg px-4 py-2 border border-[#B3B3B3] rounded-xl mt-11 hover:text-white hover:bg-black">
                   Explore More
                 </button>
               </div>
@@ -184,11 +188,13 @@ const Home = () => {
         </section>
         {/* 3rd section  */}
         <section className="py-20 sm:py-28">
-          <div className="container px-4 sm:px-0">
-            <h2 className="text-center font-bold text-3xl">Customer Reviews</h2>
+          <div className="container px-4 sm:px-6">
+            <h2 className="sm:text-center font-bold text-3xl">
+              Customer Reviews
+            </h2>
             <div className="flex flex-col sm:flex-row gap-20 mt-16">
               <div>
-                <p className="text-2xl">
+                <p className="text-lg sm:text-2xl">
                   The experience exceeded all my expectations. I was mesmerized
                   by the beauty of Ethiopia and its rich culture. Truly
                   unforgettable!
@@ -206,7 +212,7 @@ const Home = () => {
                 </div>
               </div>
               <div>
-                <p className="text-2xl">
+                <p className="text-lg sm:text-2xl">
                   The experience exceeded all my expectations. I was mesmerized
                   by the beauty of Ethiopia and its rich culture. Truly
                   unforgettable!
