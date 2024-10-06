@@ -2,11 +2,20 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import {
+  addisImg,
+  avatar2Img,
+  avatarImg,
   coffeeImg,
   cuisineImg,
+  folderImg,
+  gondarImg,
   heroImg,
+  imageImg,
   lalibelaImg,
+  lightingImg,
+  lockImg,
   semienImg,
+  starImg,
 } from "../utils";
 
 const Home = () => {
@@ -68,6 +77,151 @@ const Home = () => {
               </div>
               <div>
                 <img src={cuisineImg} alt="traditional cuisine" />
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* 1st section  */}
+        <section className="py-20 sm:py-28">
+          <div className="container px-4 sm:px-0">
+            <div className="flex flex-col sm:flex-row gap-20 items-center">
+              <div>
+                <h2 className="font-bold text-3xl">
+                  Embark on Your Journey Today!
+                </h2>
+                <p className="text-lg mt-4">
+                  Discover the beauty of Ethiopia with our exclusive
+                  experiences. Let us take you on an unforgettable adventure.
+                </p>
+                <div className="flex gap-4 mt-8">
+                  <button className="font-semibold text-lg px-4 py-2 border border-[#B3B3B3] rounded-xl">
+                    Explore More
+                  </button>
+                  <button className="font-semibold text-lg px-4 py-2 rounded-xl bg-[#2463EB] text-white">
+                    Start Now
+                  </button>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-10 mt-16">
+                  <div>
+                    <p className="font-bold text-4xl mb-2">2.5k+</p>
+                    <p className="text-lg">Join Thousands of Happy Travelers</p>
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-4 mb-2">
+                      <p className="font-bold text-4xl">5.0</p>
+                      <div>
+                        <img src={starImg} alt="star" />
+                      </div>
+                    </div>
+                    <p className="text-lg">Join Thousands of Happy Travelers</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <img src={gondarImg} alt="gondar" />
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* 2nd section  */}
+        <section className="py-20 sm:py-28">
+          <div className="container px-4 sm:px-0">
+            <div className="flex flex-col sm:flex-row gap-20 items-center">
+              <div>
+                <h2 className="font-bold text-3xl">
+                  Unforgettable Experiences in Ethiopia
+                </h2>
+                <p className="text-lg mt-4">
+                  Discover the beauty of Ethiopia with us.
+                </p>
+                <div className="mt-11 w-3/4">
+                  <div className="flex gap-20">
+                    <div className="flex items-center gap-4 mb-2">
+                      <div className="border border-[#B3B3B3] rounded-xl p-2">
+                        <img src={lightingImg} alt="star" />
+                      </div>
+                      <p className="font-semibold text-lg">
+                        Breathtaking Landscapes
+                      </p>
+                    </div>
+                    <div className="flex items-center gap-4 mb-2">
+                      <div className="border border-[#B3B3B3] rounded-xl p-2">
+                        <img src={lockImg} alt="star" />
+                      </div>
+                      <p className="font-semibold text-lg">
+                        Breathtaking Landscapes
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex gap-20">
+                    <div className="flex items-center gap-4 mb-2">
+                      <div className="border border-[#B3B3B3] rounded-xl p-2">
+                        <img src={imageImg} alt="star" />
+                      </div>
+                      <p className="font-semibold text-lg">
+                        Breathtaking Landscapes
+                      </p>
+                    </div>
+                    <div className="flex items-center gap-4 mb-2">
+                      <div className="border border-[#B3B3B3] rounded-xl p-2">
+                        <img src={folderImg} alt="star" />
+                      </div>
+                      <p className="font-semibold text-lg">
+                        Breathtaking Landscapes
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button className="font-semibold text-lg px-4 py-2 border border-[#B3B3B3] rounded-xl mt-11">
+                  Explore More
+                </button>
+              </div>
+              <div>
+                <img src={addisImg} alt="gondar" />
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* 3rd section  */}
+        <section className="py-20 sm:py-28">
+          <div className="container px-4 sm:px-0">
+            <h2 className="text-center font-bold text-3xl">Customer Reviews</h2>
+            <div className="flex flex-col sm:flex-row gap-20 mt-16">
+              <div>
+                <p className="text-2xl">
+                  The experience exceeded all my expectations. I was mesmerized
+                  by the beauty of Ethiopia and its rich culture. Truly
+                  unforgettable!
+                </p>
+                <div className="flex gap-4 mt-4">
+                  <div>
+                    <img src={avatarImg} alt="avatar" />
+                  </div>
+                  <div className="text-lg">
+                    <p className="font-semibold">Samantha H.</p>
+                    <p className="text-lightergray font-medium">
+                      Travel Enthusiast
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p className="text-2xl">
+                  The experience exceeded all my expectations. I was mesmerized
+                  by the beauty of Ethiopia and its rich culture. Truly
+                  unforgettable!
+                </p>
+                <div className="flex gap-4 mt-4">
+                  <div>
+                    <img src={avatar2Img} alt="avatar2" />
+                  </div>
+                  <div className="text-lg">
+                    <p className="font-semibold">Samantha H.</p>
+                    <p className="text-lightergray font-medium">
+                      Travel Enthusiast
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
