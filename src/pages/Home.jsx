@@ -130,7 +130,7 @@ const Home = () => {
         {/* 2nd section  */}
         <section className="py-20 sm:py-28">
           <div className="container px-4 sm:px-6">
-            <div className="flex flex-col sm:flex-row gap-20 items-center">
+            <div className="flex flex-col sm:flex-row justify-between gap-20 items-center">
               <div>
                 <h2 className="font-bold text-3xl">
                   Unforgettable Experiences in Ethiopia
